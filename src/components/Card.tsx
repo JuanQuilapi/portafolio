@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 interface CardProps {
-  body: string;
+  children: ReactNode;
 }
 
 function Card(props: CardProps) {
-  const { body } = props;
+  const { children } = props;
   return (
     <div
       className="card"
@@ -11,20 +13,22 @@ function Card(props: CardProps) {
         width: "350px",
       }}
     >
-      <div className="card-body">{body}</div>
+      <div className="card-body">{children}</div>
     </div>
   );
 }
-
-export function CardBody() {
+interface CardBodyProps {
+  title: string;
+  subtitle?: string;
+  text: string;
+}
+export function CardBody(props: CardBodyProps) {
+  const { title, subtitle, text } = props;
   return (
     <>
-      <h5 className="card-title">Card title</h5>
-      <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p className="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
+      <h5 className="card-title">{title}</h5>
+      <h6 className="card-subtitle mb-2 text-body-secondary">{subtitle}</h6>
+      <p className="card-text">{text}</p>
     </>
   );
 }
