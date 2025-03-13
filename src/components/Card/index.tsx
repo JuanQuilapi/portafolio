@@ -1,35 +1,48 @@
-import { ReactNode } from "react";
+import styles from "./Card.module.css";
 
-interface CardProps {
-  children: ReactNode;
-}
-
-function Card(props: CardProps) {
-  const { children } = props;
-  return (
-    <div
-      className="card"
-      style={{
-        width: "350px",
-      }}
-    >
-      <div className="card-body">{children}</div>
-    </div>
-  );
-}
-interface CardBodyProps {
+interface Project {
   title: string;
-  subtitle?: string;
-  text: string;
+  description: string;
+  tech: string[];
+  image: string;
+  github?: string;
+  demo?: string;
 }
-export function CardBody(props: CardBodyProps) {
-  const { title, subtitle, text } = props;
+
+function Card({ project }: { project: Project }) {
   return (
-    <>
-      <h5 className="card-title">{title}</h5>
-      <h6 className="card-subtitle mb-2 text-body-secondary">{subtitle}</h6>
-      <p className="card-text">{text}</p>
-    </>
+    <article className={styles.card}>
+      <div className={styles.imageContainer}>
+        <img src={project.image} alt={project.title} className={styles.image} />
+        <div className={styles.overlay} />
+      </div>
+
+      <div className={styles.content}>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles.description}>{project.description}</p>
+
+        <div className={styles.techStack}>
+          {project.tech.map((tech) => (
+            <span key={tech} className={styles.tech}>
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className={styles.links}>
+          {project.github && (
+            <a href={project.github} className={styles.link}>
+              GitHub
+            </a>
+          )}
+          {project.demo && (
+            <a href={project.demo} className={styles.link}>
+              Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
   );
 }
 

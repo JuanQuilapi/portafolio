@@ -18,3 +18,12 @@ h3 {
   color: var(--primary);
   margin-bottom: var(--spacing-sm);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar */
+section {
+  scroll-margin-top: 100px; /* Adjust based on your navbar height */
+}
