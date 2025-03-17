@@ -1,0 +1,83 @@
+.experienceSection {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experienceList {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.experienceItem {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 3rem;
+  border-left: 2px solid #6c5ce7;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background: #6c5ce7;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  color: #6c5ce7;
+  font-weight: 600;
+}
+
+.subHeader {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.descriptionList {
+  list-style: none;
+  padding: 0;
+}
+
+.descriptionItem {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.descriptionItem::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #6c5ce7;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .subHeader {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .experienceItem {
+    padding-left: 20px;
+  }
+}

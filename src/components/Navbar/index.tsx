@@ -16,21 +16,21 @@ function Navbar() {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
-        <h1 className={styles.logo}>Your Portfolio</h1>
+        <h1 className={styles.logo}>Portafolio</h1>
         <ul className={styles.navLinks}>
           <li>
-            <a href="#projects" className={styles.navLink}>
-              Projects
+            <a href="#Experience" className={styles.navLink}>
+              Experiencia
             </a>
           </li>
           <li>
-            <a href="#about" className={styles.navLink}>
-              About
+            <a href="#projects" className={styles.navLink}>
+              Proyectos
             </a>
           </li>
           <li>
             <a href="#contact" className={styles.navLink}>
-              Contact
+              Contacto
             </a>
           </li>
         </ul>

@@ -1,8 +1,13 @@
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  display: flex;
+  background: #ffffff0d;
+  border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto 100px;
+  width: 1200px;
+  height: 700px;
+  flex: 1;
 }
 
 .card:hover {
@@ -12,14 +17,14 @@
 
 .imageContainer {
   position: relative;
-  height: 200px;
   overflow: hidden;
+  flex: 1;
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .overlay {
@@ -33,6 +38,8 @@
 
 .content {
   padding: var(--spacing-md);
+  max-width: 500px;
+  flex: 2;
 }
 
 .title {
@@ -44,6 +51,7 @@
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: var(--spacing-md);
+  white-space: pre-line;
 }
 
 .techStack {
