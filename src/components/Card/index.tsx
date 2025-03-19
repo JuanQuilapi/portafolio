@@ -2,6 +2,7 @@ import styles from "./Card.module.css";
 
 interface Project {
   title: string;
+  company: string;
   description: string;
   tech: string[];
   image: string;
@@ -19,6 +20,7 @@ function Card({ project }: { project: Project }) {
 
       <div className={styles.content}>
         <h3 className={styles.title}>{project.title}</h3>
+        <span className={styles.company}>{project.company}</span>
         <p className={styles.description}>{project.description}</p>
 
         <div className={styles.techStack}>

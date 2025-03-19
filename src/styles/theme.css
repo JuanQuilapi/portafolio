@@ -1,16 +1,22 @@
-/* src/styles/theme.css */
 :root {
-  /* Colors */
   --background: #1a1a1a;
   --text-color: #ffffff;
-  --primary: #0cc8e5;
-  --secondary: #077dcdd0;
+  --primary: #0052a9;
+  --secondary: #ab7b32;
+  --box-color: #ffffff0d;
 
-  /* Spacing */
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
 
   --font-family: "Roboto", sans-serif;
   --font-size-base: 16px;
+}
+
+.light {
+  --background: #ffffff;
+  --text-color: #1a1a1a;
+  --primary: #0061c9;
+  --secondary: #ab7b32;
+  --box-color: #0000000d;
 }

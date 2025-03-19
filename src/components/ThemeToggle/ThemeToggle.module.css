@@ -1,0 +1,37 @@
+.toggleButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.toggleButton:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  stroke: var(--background);
+}
+
+.sun {
+  transform: rotate(0deg);
+}
+
+.moon {
+  transform: rotate(5deg);
+}
+
+.dark .sun {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.dark .moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}

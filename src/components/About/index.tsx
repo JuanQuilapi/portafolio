@@ -1,6 +1,8 @@
 import styles from "./About.module.css";
 
 function About() {
+  const description = `Especializado en creación modelos de machine learning y desarrollo Full-Stack, con experiencia en empresa de la industria minera.\n
+            Egresado en Ingeniería Civil en Computación y Magíster en Ciencia de Datos en la Universidad de Chile, 25 años, apasionado por crear soluciones usando datos .`;
   return (
     <section className={styles.about}>
       <div className={styles.container}>
@@ -16,12 +18,8 @@ function About() {
         {/* Text Content */}
         <div className={styles.content}>
           <h1 className={styles.title}>Juan Ignacio Quilapi Jordán</h1>
-          <h2 className={styles.subtitle}>Computer Engineer</h2>
-          <p className={styles.description}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            officiis dolores deserunt? Id quos ex esse quis minus natus aperiam
-            iusto tempore corrupti! Illo iste hic quam ea error explicabo.
-          </p>
+          <h2 className={styles.subtitle}>Software Engineer</h2>
+          <p className={styles.description}>{description}</p>
         </div>
       </div>
     </section>

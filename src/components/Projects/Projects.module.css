@@ -1,18 +1,13 @@
-/* components/Projects/Projects.module.css */
 .projects {
   padding: var(--spacing-xl) 0;
-  /* background: rgba(255, 255, 255, 0.02); */
-}
-
-.sectionTitle {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-xl);
-  color: var(--primary);
 }
 
 .grid {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }

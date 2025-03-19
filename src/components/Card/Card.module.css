@@ -1,13 +1,13 @@
 .card {
   display: flex;
-  background: #ffffff0d;
+  background: var(--box-color);
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: auto 100px;
-  width: 1200px;
-  height: 700px;
+  max-width: 1200px;
+  max-height: 700px;
   flex: 1;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -19,6 +19,7 @@
   position: relative;
   overflow: hidden;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .image {
@@ -33,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(transparent 50%, var(--box-color));
 }
 
 .content {
@@ -49,7 +50,7 @@
 
 .description {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-color);
   margin-bottom: var(--spacing-md);
   white-space: pre-line;
 }
@@ -62,8 +63,9 @@
 }
 
 .tech {
-  background: rgba(108, 92, 231, 0.1);
-  color: var(--primary);
+  background: var(--primary);
+  opacity: 90%;
+  color: white;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -86,4 +88,9 @@
 .link:hover {
   background: var(--primary);
   color: white;
+}
+
+.company {
+  color: var(--secondary);
+  font-weight: 600;
 }

@@ -8,22 +8,38 @@ body {
   font-size: var(--font-size-base);
   background-color: var(--background);
   color: var(--text-color);
-  line-height: 1.6; /* Improves readability */
+  line-height: 1.6;
+  text-wrap: balance;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-line;
 }
 
-/* Optional: Style headings */
 h1,
 h2,
 h3 {
-  color: var(--primary);
   margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--primary);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Offset for fixed navbar */
 section {
-  scroll-margin-top: 100px; /* Adjust based on your navbar height */
+  scroll-margin-top: 100px;
 }

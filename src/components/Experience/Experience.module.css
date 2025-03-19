@@ -1,20 +1,21 @@
 .experienceSection {
-  padding: 2rem;
   max-width: 800px;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
-
+.experienceSection h3 {
+  margin-top: 0;
+}
 .experienceList {
   list-style: none;
   padding: 0;
   position: relative;
+  border-left: 2px solid gray;
 }
 
 .experienceItem {
   position: relative;
   padding-left: 30px;
   margin-bottom: 3rem;
-  border-left: 2px solid #6c5ce7;
 }
 
 .timelineDot {
@@ -23,7 +24,7 @@
   top: 0;
   width: 16px;
   height: 16px;
-  background: #6c5ce7;
+  background-color: gray;
   border-radius: 50%;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .company {
-  color: #6c5ce7;
+  color: var(--secondary);
   font-weight: 600;
 }
 
@@ -63,7 +64,7 @@
   content: "▹";
   position: absolute;
   left: 0;
-  color: #6c5ce7;
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {

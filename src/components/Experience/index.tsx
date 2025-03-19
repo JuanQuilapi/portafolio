@@ -37,12 +37,12 @@ const Experience = () => {
 
   return (
     <section id="Experience" className={styles.experienceSection}>
-      <h2>Experiencia Profesional</h2>
+      <h2>Experiencia</h2>
       <ul className={styles.experienceList}>
         {experiences.map((exp, index) => (
           <li key={index} className={styles.experienceItem}>
-            <div className={styles.timelineDot}></div>
             <div className={styles.content}>
+              <div className={styles.timelineDot}></div>
               <div className={styles.header}>
                 <h3>{exp.title}</h3>
                 <span className={styles.company}>{exp.company}</span>
