@@ -25,12 +25,7 @@ const Projects = () => {
       title:
         "Clasificación de estado fenológico en frutas usando visión computacional",
       company: "Instracrops",
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            officiis dolores deserunt? Id quos ex esse quis minus natus aperiam
-            iusto tempore corrupti! Illo iste hic quam ea error explicabo. \n 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            officiis dolores deserunt? Id quos ex esse quis minus natus aperiam
-            iusto tempore corrupti! Illo iste hic quam ea error explicabo. `,
+      description: `Desarrollo de un modelo para la clasificación de estados fenológicos de frutales (cerezas, manzanas y agaves) utilizando redes neuronales profundas como VGG16 y YOLO-NAS,implementadas con TensorFlow y PyTorch. `,
       tech: ["Python", "Pytorch", "Tensorflow"],
       image: `${proyect2_img1}`,
     },
@@ -38,12 +33,9 @@ const Projects = () => {
       id: 2,
       title: "Aplicación web para análisis de datos",
       company: "LookData",
-      description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            officiis dolores deserunt? Id quos ex esse quis minus natus aperiam
-            iusto tempore corrupti! Illo iste hic quam ea error explicabo. \n 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            officiis dolores deserunt? Id quos ex esse quis minus natus aperiam
-            iusto tempore corrupti! Illo iste hic quam ea error explicabo. `,
+      description: `Desarrollo de un dashboard para visualizar métricas de ventas y pedidos en tiempo real para restaurantes de delivery. 
+Implementación del frontend con React y TypeScript, con integración a un backend desarrollado en Django y consultas optimizadas con MySQL.
+ `,
       tech: ["React", "Django", "Python", "Typescript", "Tailwind", "HMTL"],
       image: `${proyect3_img1}`,
     },

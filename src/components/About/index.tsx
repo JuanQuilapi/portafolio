@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import portfolio_photo from "../../img/foto_portafolio.webp";
 
 function About() {
   const description = `Especializado en creación modelos de machine learning y desarrollo Full-Stack, con experiencia en empresa de la industria minera.\n
@@ -9,7 +10,7 @@ function About() {
         {/* Image Container */}
         <div className={styles.imageWrapper}>
           <img
-            src="https://i.pravatar.cc/300"
+            src={portfolio_photo}
             alt="Juan Ignacio Quilapi Jordán"
             className={styles.profileImage}
           />
