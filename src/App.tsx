@@ -5,14 +5,18 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Tech from "./components/Tech/";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <About />
-      <Experience />
-      <Projects />
-      <Tech />
+      <main className="main-wrapper">
+        <About />
+        <Experience />
+        <Projects />
+        <Tech />
+      </main>
+      <Footer />
     </div>
   );
 }

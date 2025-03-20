@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  background: var(--box-color);
+  border-top: 1px solid var(--box-color);
+  padding: 2rem 0;
+  margin-top: 25px;
+  max-height: 60px;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1200px; /* Match your content width */
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  max-width: 300px;
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.githubLink:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.githubIcon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    margin-bottom: 1rem;
+  }
+}

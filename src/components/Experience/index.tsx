@@ -21,6 +21,7 @@ const Experience = () => {
       description: [
         "Apoyo en cursos de Procesamiento masivo de datos y Web de datos",
         "Revisión de tareas y asistencia a estudiantes en laboratorios",
+        "Revisión de proyectos finales donde los alumnos trabajan para manejar grandes volumenes de datos y crear funcionalidades como listas indexadas, creación de grafos de conocimiento, análisis de sentimientos, entre otros",
       ],
     },
     {

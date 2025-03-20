@@ -18,6 +18,8 @@ import airflow from "../../assets/airflow.svg";
 import docker from "../../assets/docker.svg";
 import azure from "../../assets/azure.svg";
 import typescript from "../../assets/typescript.svg";
+import powerBi from "../../assets/power-bi.svg";
+import r from "../../assets/r.svg";
 
 const Skills = () => {
   const skillsData = {
@@ -44,12 +46,14 @@ const Skills = () => {
       { name: "Apache Airflow", img: airflow },
       { name: "Docker", img: docker },
       { name: "Azure", img: azure },
+      { name: "Power Bi", img: powerBi },
+      { name: "R", img: r },
     ],
   };
 
   return (
     <section className={styles.skillsSection}>
-      <h2>Technical Skills</h2>
+      <h2>Habilidades técnicas</h2>
       <div className={styles.skillsBox}>
         {Object.entries(skillsData).map(([category, skills]) => (
           <div key={category} className={styles.skillCategory}>
