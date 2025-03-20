@@ -9,7 +9,7 @@
 
 .footerContent {
   width: 100%;
-  max-width: 1200px; /* Match your content width */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -56,5 +56,12 @@
 
   .text {
     margin-bottom: 1rem;
+    font-size: 0.45rem;
+    max-width: 100px;
+  }
+  .githubIcon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
   }
 }
