@@ -1,5 +1,3 @@
-/* components/Skills/Skills.module.css */
-
 .skillsContainer {
   display: flex;
   flex-flow: row nowrap;
@@ -14,6 +12,7 @@
   border-radius: 8px;
   transition: transform 0.3s ease;
   max-width: 400px;
+  flex: 1 1 300px;
 }
 
 .categoryTitle {
@@ -57,4 +56,26 @@
 
 .skillsSection {
   max-width: 1200px;
+}
+
+@media (max-width: 800px) {
+  .skillsContainer {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .skillCategory {
+    flex: 1 1 45%; /* Two items per row */
+    min-width: 280px; /* Minimum size before wrapping */
+    margin-bottom: 1rem;
+  }
+
+  .skillsList {
+    flex-flow: row wrap; /* Stack items vertically */
+    justify-content: flex-start;
+  }
+
+  .skillItem {
+    flex: 1 1 120px; /* Adjust item sizing */
+  }
 }
