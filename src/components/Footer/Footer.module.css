@@ -4,7 +4,6 @@
   border-top: 1px solid var(--box-color);
   padding: 2rem 0;
   margin-top: 25px;
-  max-height: 60px;
 }
 
 .footerContent {
@@ -50,16 +49,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .footerContent {
+    justify-content: start;
+  }
   .content {
     flex-direction: column;
     text-align: center;
   }
 
-  .text {
-    margin-bottom: 1rem;
-    font-size: 0.6rem;
-    max-width: 100px;
-  }
   .githubIcon {
     width: 16px;
     height: 16px;
